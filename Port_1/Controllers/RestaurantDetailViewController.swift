@@ -15,6 +15,27 @@ class RestaurantDetailViewController: UITableViewController {
     
     //MARK: IBOutlets, IBActions
     
+        //NAV BAR
+    @IBOutlet var heartButton: UIBarButtonItem!
+    
+        //Cell One
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var cuisineLabel: UILabel!
+    @IBOutlet var headerAddressLabel: UILabel!
+    
+    
+        //Cell Two
+    @IBOutlet var tableDetailLabel: UILabel!
+    
+        //Cell Three
+    @IBOutlet var overallRatingLabel: UILabel!
+    
+        //Cell Eight
+    @IBOutlet var addressLabel: UILabel!
+    
+        //Cell Nine
+    @IBOutlet var locationMapImageView: UIImageView!
+    
     
     //MARK: Methods
     override func viewDidLoad() {
