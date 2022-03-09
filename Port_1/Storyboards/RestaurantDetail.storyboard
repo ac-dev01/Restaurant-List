@@ -456,6 +456,16 @@
                     <navigationItem key="navigationItem" id="wWr-Xd-wpA">
                         <barButtonItem key="rightBarButtonItem" image="heart-unselected" id="soV-Zu-HEK"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="syM-kD-sxl" id="mYV-3h-tb2"/>
+                        <outlet property="cuisineLabel" destination="d71-Eq-mMn" id="8qA-B5-m03"/>
+                        <outlet property="headerAddressLabel" destination="UYm-Ip-FZy" id="p5H-Zn-VZj"/>
+                        <outlet property="heartButton" destination="soV-Zu-HEK" id="tO8-8O-iuV"/>
+                        <outlet property="locationMapImageView" destination="eZM-l0-bwa" id="h7f-yu-fiX"/>
+                        <outlet property="nameLabel" destination="6er-aK-n02" id="ddA-4T-FBJ"/>
+                        <outlet property="overallRatingLabel" destination="zON-CP-XRT" id="Zo8-rC-HCb"/>
+                        <outlet property="tableDetailLabel" destination="QHZ-op-gz0" id="Kmi-m9-me6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbX-wO-Y8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
