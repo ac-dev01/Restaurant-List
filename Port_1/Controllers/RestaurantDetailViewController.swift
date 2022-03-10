@@ -37,6 +37,9 @@ class RestaurantDetailViewController: UITableViewController {
     @IBOutlet var locationMapImageView: UIImageView!
     
     
+    @IBOutlet var ratingsView: RatingsView!
+    
+    
     //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,11 @@ private extension RestaurantDetailViewController {
     func initialize() {
         setupLabels()
         createMap()
+        createRating()
+    }
+    
+    func createRating() {
+        ratingsView.rating = 3.5
     }
     
     func setupLabels() {
