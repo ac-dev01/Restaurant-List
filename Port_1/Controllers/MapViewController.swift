@@ -95,7 +95,7 @@ extension MapViewController: MKMapViewDelegate {
 
 //MARK: Private Extensions
 
-private extension MapViewController {
+private extension MapViewController{
     
     //MARK: Helper Methods
     

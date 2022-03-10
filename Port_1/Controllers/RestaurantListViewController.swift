@@ -8,7 +8,7 @@
 import UIKit
 
 class RestaurantListViewController: UIViewController {
-
+    
     
     //MARK: Properties
     
@@ -35,11 +35,26 @@ class RestaurantListViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-       
+        
         createData()
         setupTitle()
-       
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let identifier = segue.identifier {
+            switch identifier {
+            case Segue.showDetail.rawValue:
+                showRestaurantDetail(segue: segue)
+                
+            default:
+                print("Segue not added")
+            }
+        }
+        
+    }
+    
 }
 
 private extension RestaurantListViewController {
@@ -73,6 +88,14 @@ private extension RestaurantListViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
         title = selectedCity?.cityAndState.uppercased()
         navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    func showRestaurantDetail(segue: UIStoryboardSegue) {
+        if let viewController = segue.destination as? RestaurantDetailViewController,
+           let indexPath = collectionView.indexPathsForSelectedItems?.first {
+            selectedRestaurant = manager.restaurantItem(at: indexPath.row)
+            viewController.selectedRestaurant = selectedRestaurant
+        }
     }
 }
 
