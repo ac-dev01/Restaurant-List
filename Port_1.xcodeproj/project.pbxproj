@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D20084D27DA7EFE0012FAC9 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20084C27DA7EFE0012FAC9 /* RatingsView.swift */; };
+		9D20084F27DB51010012FAC9 /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20084E27DB51010012FAC9 /* ReviewFormViewController.swift */; };
 		9D38346427929D910014D57E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38346327929D910014D57E /* AppDelegate.swift */; };
 		9D38346627929D910014D57E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38346527929D910014D57E /* SceneDelegate.swift */; };
 		9D38346B27929D910014D57E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D38346927929D910014D57E /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		9D20084C27DA7EFE0012FAC9 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		9D20084E27DB51010012FAC9 /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
 		9D38346027929D910014D57E /* Port_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Port_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D38346327929D910014D57E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D38346527929D910014D57E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				9DBECCBC27A982B300AB6509 /* MapViewController.swift */,
 				9D8EB0CC27AD7DEB007A83DB /* RestaurantDetailViewController.swift */,
 				9DCE6CB227C0BA40007AEB4F /* ExploreHeaderView.swift */,
+				9D20084E27DB51010012FAC9 /* ReviewFormViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D20084F27DB51010012FAC9 /* ReviewFormViewController.swift in Sources */,
 				9D4A0A4B27A2B48A003FA9D3 /* ExploreItem.swift in Sources */,
 				9D20084D27DA7EFE0012FAC9 /* RatingsView.swift in Sources */,
 				9DBECCBB27A9801E00AB6509 /* DataManager.swift in Sources */,
