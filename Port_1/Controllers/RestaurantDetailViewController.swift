@@ -43,10 +43,7 @@ class RestaurantDetailViewController: UITableViewController {
     //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         initialize()
-
     }
     
     
@@ -65,6 +62,7 @@ private extension RestaurantDetailViewController {
     
     func createRating() {
         ratingsView.rating = 3.5
+        ratingsView.isEnabled = true
     }
     
     func setupLabels() {
