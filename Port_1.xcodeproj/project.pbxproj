@@ -561,6 +561,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Port_1/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Restaurant List";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use your Camera to take pictures ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app use your Photo Library pictures";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
@@ -590,6 +592,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Port_1/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Restaurant List";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use your Camera to take pictures ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app use your Photo Library pictures";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
