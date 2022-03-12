@@ -13,6 +13,8 @@
 		9D20085327DB64720012FAC9 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085227DB64720012FAC9 /* FilterItem.swift */; };
 		9D20085527DB64AB0012FAC9 /* FilterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085427DB64AB0012FAC9 /* FilterDataManager.swift */; };
 		9D20085727DB655A0012FAC9 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085627DB655A0012FAC9 /* ImageFiltering.swift */; };
+		9D20085927DCE6EC0012FAC9 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085827DCE6EC0012FAC9 /* FilterCell.swift */; };
+		9D20085B27DCE8110012FAC9 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085A27DCE8110012FAC9 /* PhotoFilterViewController.swift */; };
 		9D38346427929D910014D57E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38346327929D910014D57E /* AppDelegate.swift */; };
 		9D38346627929D910014D57E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38346527929D910014D57E /* SceneDelegate.swift */; };
 		9D38346B27929D910014D57E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D38346927929D910014D57E /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 		9D20085227DB64720012FAC9 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
 		9D20085427DB64AB0012FAC9 /* FilterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataManager.swift; sourceTree = "<group>"; };
 		9D20085627DB655A0012FAC9 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
+		9D20085827DCE6EC0012FAC9 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		9D20085A27DCE8110012FAC9 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
 		9D38346027929D910014D57E /* Port_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Port_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D38346327929D910014D57E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D38346527929D910014D57E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				9D20085227DB64720012FAC9 /* FilterItem.swift */,
 				9D20085427DB64AB0012FAC9 /* FilterDataManager.swift */,
 				9D20085627DB655A0012FAC9 /* ImageFiltering.swift */,
+				9D20085827DCE6EC0012FAC9 /* FilterCell.swift */,
+				9D20085A27DCE8110012FAC9 /* PhotoFilterViewController.swift */,
 			);
 			path = "Photo Filter";
 			sourceTree = "<group>";
@@ -381,6 +387,8 @@
 				9D20084D27DA7EFE0012FAC9 /* RatingsView.swift in Sources */,
 				9DBECCBB27A9801E00AB6509 /* DataManager.swift in Sources */,
 				9DB24D9827BE887C00D5AD62 /* LocationItems.swift in Sources */,
+				9D20085B27DCE8110012FAC9 /* PhotoFilterViewController.swift in Sources */,
+				9D20085927DCE6EC0012FAC9 /* FilterCell.swift in Sources */,
 				9D20085727DB655A0012FAC9 /* ImageFiltering.swift in Sources */,
 				9D38346427929D910014D57E /* AppDelegate.swift in Sources */,
 				9D7BCE98279D1061001433BA /* RestaurantListViewController.swift in Sources */,
