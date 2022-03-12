@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9D20084D27DA7EFE0012FAC9 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20084C27DA7EFE0012FAC9 /* RatingsView.swift */; };
 		9D20084F27DB51010012FAC9 /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20084E27DB51010012FAC9 /* ReviewFormViewController.swift */; };
+		9D20085127DB63460012FAC9 /* FilterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D20085027DB63460012FAC9 /* FilterData.plist */; };
+		9D20085327DB64720012FAC9 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085227DB64720012FAC9 /* FilterItem.swift */; };
+		9D20085527DB64AB0012FAC9 /* FilterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085427DB64AB0012FAC9 /* FilterDataManager.swift */; };
+		9D20085727DB655A0012FAC9 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20085627DB655A0012FAC9 /* ImageFiltering.swift */; };
 		9D38346427929D910014D57E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38346327929D910014D57E /* AppDelegate.swift */; };
 		9D38346627929D910014D57E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38346527929D910014D57E /* SceneDelegate.swift */; };
 		9D38346B27929D910014D57E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D38346927929D910014D57E /* Main.storyboard */; };
@@ -57,6 +61,10 @@
 /* Begin PBXFileReference section */
 		9D20084C27DA7EFE0012FAC9 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		9D20084E27DB51010012FAC9 /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
+		9D20085027DB63460012FAC9 /* FilterData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FilterData.plist; sourceTree = "<group>"; };
+		9D20085227DB64720012FAC9 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
+		9D20085427DB64AB0012FAC9 /* FilterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataManager.swift; sourceTree = "<group>"; };
+		9D20085627DB655A0012FAC9 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
 		9D38346027929D910014D57E /* Port_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Port_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D38346327929D910014D57E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D38346527929D910014D57E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,11 +123,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D20084B27DA7DB90012FAC9 /* New Group */ = {
+		9D20084B27DA7DB90012FAC9 /* Photo Filter */ = {
 			isa = PBXGroup;
 			children = (
+				9D20085027DB63460012FAC9 /* FilterData.plist */,
+				9D20085227DB64720012FAC9 /* FilterItem.swift */,
+				9D20085427DB64AB0012FAC9 /* FilterDataManager.swift */,
+				9D20085627DB655A0012FAC9 /* ImageFiltering.swift */,
 			);
-			path = "New Group";
+			path = "Photo Filter";
 			sourceTree = "<group>";
 		};
 		9D38345727929D910014D57E = {
@@ -141,7 +153,7 @@
 		9D38346227929D910014D57E /* Port_1 */ = {
 			isa = PBXGroup;
 			children = (
-				9D20084B27DA7DB90012FAC9 /* New Group */,
+				9D20084B27DA7DB90012FAC9 /* Photo Filter */,
 				9DB141B327D78A6E00C36034 /* No Data */,
 				9DB141B027D7891700C36034 /* Cells */,
 				9D8EB0CE27AD8478007A83DB /* JSON Data Files  */,
@@ -348,6 +360,7 @@
 				9D8EB0E627AD8488007A83DB /* Philadelphia.json in Resources */,
 				9D8EB0E727AD8488007A83DB /* Los Angeles.json in Resources */,
 				9D8EB0E827AD8488007A83DB /* Boston.json in Resources */,
+				9D20085127DB63460012FAC9 /* FilterData.plist in Resources */,
 				9D8EB0DC27AD8488007A83DB /* New Orleans.json in Resources */,
 				9DBECCB727A979EE00AB6509 /* MapLocations.plist in Resources */,
 				9D90ABEC27AD208B00AB142E /* RestaurantDetail.storyboard in Resources */,
@@ -368,6 +381,7 @@
 				9D20084D27DA7EFE0012FAC9 /* RatingsView.swift in Sources */,
 				9DBECCBB27A9801E00AB6509 /* DataManager.swift in Sources */,
 				9DB24D9827BE887C00D5AD62 /* LocationItems.swift in Sources */,
+				9D20085727DB655A0012FAC9 /* ImageFiltering.swift in Sources */,
 				9D38346427929D910014D57E /* AppDelegate.swift in Sources */,
 				9D7BCE98279D1061001433BA /* RestaurantListViewController.swift in Sources */,
 				9DB141B527D78A7B00C36034 /* NoDataView.swift in Sources */,
@@ -376,8 +390,10 @@
 				9DCE6CB327C0BA40007AEB4F /* ExploreHeaderView.swift in Sources */,
 				9D90ABEF27AD213900AB142E /* Segue.swift in Sources */,
 				9DB141B227D7892400C36034 /* RestaurantCell.swift in Sources */,
+				9D20085527DB64AB0012FAC9 /* FilterDataManager.swift in Sources */,
 				9D38346627929D910014D57E /* SceneDelegate.swift in Sources */,
 				9D8EB0CD27AD7DEB007A83DB /* RestaurantDetailViewController.swift in Sources */,
+				9D20085327DB64720012FAC9 /* FilterItem.swift in Sources */,
 				9DBECCBD27A982B300AB6509 /* MapViewController.swift in Sources */,
 				9DBECCB927A97DA800AB6509 /* MapDataManager .swift in Sources */,
 				9DC088A2279947CF00E2C627 /* ExploreViewController.swift in Sources */,

@@ -1,0 +1,46 @@
+//
+//  ImageFiltering.swift
+//  Port_1
+//
+//  Created by Ayush Chaurasia on 11/03/22.
+//
+
+import Foundation
+import CoreImage
+import UIKit
+
+
+protocol ImageFiltering {
+    
+    func apply(filter: String, originalImage: UIImage) -> UIImage
+    
+}
+
+
+extension ImageFiltering {
+    
+    func apply(filter: String, originalImage: UIImage) -> UIImage {
+        
+        let initialImage = CIImage(image: originalImage, options: nil)
+        
+        let originalOrientation = originalImage.imageOrientation
+        
+        guard let ciFilter = CIFilter(name: filter) else {
+            print("Filter Not Found")
+            return originalImage
+        }
+        
+        ciFilter.setValue(initialImage, forKey: kCIInputImageKey)
+        
+        let context = CIContext()
+        
+        let filteredCIImage = (ciFilter.outputImage)!
+        
+        let filteredCGImage = context.createCGImage(filteredCIImage,
+                                                    from: filteredCIImage.extent)
+        
+        return UIImage(cgImage: filteredCGImage!, scale: 1.0, orientation: originalOrientation)
+        
+    }
+    
+}
