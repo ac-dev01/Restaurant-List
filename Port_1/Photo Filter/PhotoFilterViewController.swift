@@ -71,10 +71,13 @@ private extension PhotoFilterViewController {
         
     }
     
+    
     func checkSource() {
         
         let cameraMediaType = AVMediaType.video
         let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: cameraMediaType)
+        
+        
         
         switch cameraAuthorizationStatus {
         case .notDetermined:
