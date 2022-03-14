@@ -27,6 +27,9 @@
 		9D4D826527A5994A000603AE /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D826427A5994A000603AE /* LocationDataManager.swift */; };
 		9D7BCE98279D1061001433BA /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BCE97279D1061001433BA /* RestaurantListViewController.swift */; };
 		9D8B6CE327DF9AF400A5980A /* LetsEatModel .xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B6CE127DF9AF400A5980A /* LetsEatModel .xcdatamodeld */; };
+		9D8B6CF227DFA1BA00A5980A /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B6CF127DFA1BA00A5980A /* ReviewItem.swift */; };
+		9D8B6CF427DFA1C600A5980A /* RestaurantPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B6CF327DFA1C600A5980A /* RestaurantPhotoItem.swift */; };
+		9D8B6CF627DFA2E000A5980A /* CoreDataManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B6CF527DFA2E000A5980A /* CoreDataManager .swift */; };
 		9D8EB0CD27AD7DEB007A83DB /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8EB0CC27AD7DEB007A83DB /* RestaurantDetailViewController.swift */; };
 		9D8EB0DC27AD8488007A83DB /* New Orleans.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D8EB0CF27AD8487007A83DB /* New Orleans.json */; };
 		9D8EB0DD27AD8488007A83DB /* New York.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D8EB0D027AD8487007A83DB /* New York.json */; };
@@ -84,6 +87,9 @@
 		9D4D826427A5994A000603AE /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		9D7BCE97279D1061001433BA /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		9D8B6CE227DF9AF400A5980A /* LetsEatModel .xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LetsEatModel .xcdatamodel"; sourceTree = "<group>"; };
+		9D8B6CF127DFA1BA00A5980A /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
+		9D8B6CF327DFA1C600A5980A /* RestaurantPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotoItem.swift; sourceTree = "<group>"; };
+		9D8B6CF527DFA2E000A5980A /* CoreDataManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager .swift"; sourceTree = "<group>"; };
 		9D8EB0CC27AD7DEB007A83DB /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		9D8EB0CF27AD8487007A83DB /* New Orleans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "New Orleans.json"; sourceTree = "<group>"; };
 		9D8EB0D027AD8487007A83DB /* New York.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "New York.json"; sourceTree = "<group>"; };
@@ -184,8 +190,18 @@
 			isa = PBXGroup;
 			children = (
 				9D8B6CE127DF9AF400A5980A /* LetsEatModel .xcdatamodeld */,
+				9D8B6CF527DFA2E000A5980A /* CoreDataManager .swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9D8B6CEF27DFA1A200A5980A /* ReviewForm */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B6CF127DFA1BA00A5980A /* ReviewItem.swift */,
+				9D8B6CF327DFA1C600A5980A /* RestaurantPhotoItem.swift */,
+			);
+			path = ReviewForm;
 			sourceTree = "<group>";
 		};
 		9D8EB0CE27AD8478007A83DB /* JSON Data Files  */ = {
@@ -266,6 +282,7 @@
 		9DC0889E279946F600E2C627 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9D8B6CEF27DFA1A200A5980A /* ReviewForm */,
 				9D4A0A4A27A2B48A003FA9D3 /* ExploreItem.swift */,
 				9D4A0A4C27A2B5F7003FA9D3 /* ExploreDataManager.swift */,
 				9DBECCB827A97DA800AB6509 /* MapDataManager .swift */,
@@ -393,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8B6CF627DFA2E000A5980A /* CoreDataManager .swift in Sources */,
 				9D20084F27DB51010012FAC9 /* ReviewFormViewController.swift in Sources */,
 				9D4A0A4B27A2B48A003FA9D3 /* ExploreItem.swift in Sources */,
 				9D20084D27DA7EFE0012FAC9 /* RatingsView.swift in Sources */,
@@ -409,9 +427,11 @@
 				9D4A0A4D27A2B5F7003FA9D3 /* ExploreDataManager.swift in Sources */,
 				9DCE6CB327C0BA40007AEB4F /* ExploreHeaderView.swift in Sources */,
 				9D90ABEF27AD213900AB142E /* Segue.swift in Sources */,
+				9D8B6CF227DFA1BA00A5980A /* ReviewItem.swift in Sources */,
 				9DB141B227D7892400C36034 /* RestaurantCell.swift in Sources */,
 				9D20085527DB64AB0012FAC9 /* FilterDataManager.swift in Sources */,
 				9D38346627929D910014D57E /* SceneDelegate.swift in Sources */,
+				9D8B6CF427DFA1C600A5980A /* RestaurantPhotoItem.swift in Sources */,
 				9D8EB0CD27AD7DEB007A83DB /* RestaurantDetailViewController.swift in Sources */,
 				9D20085327DB64720012FAC9 /* FilterItem.swift in Sources */,
 				9DBECCBD27A982B300AB6509 /* MapViewController.swift in Sources */,
