@@ -90,7 +90,7 @@ private extension PhotoFilterViewController {
             }
             
         case .authorized:
-            self.showCameraUserInterface()
+            self.showCameraUserInterface() 
             
         default:
             break

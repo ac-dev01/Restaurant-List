@@ -26,6 +26,7 @@
 		9D4D826327A59582000603AE /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D826227A59582000603AE /* Locations.plist */; };
 		9D4D826527A5994A000603AE /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D826427A5994A000603AE /* LocationDataManager.swift */; };
 		9D7BCE98279D1061001433BA /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BCE97279D1061001433BA /* RestaurantListViewController.swift */; };
+		9D8B6CE327DF9AF400A5980A /* LetsEatModel .xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B6CE127DF9AF400A5980A /* LetsEatModel .xcdatamodeld */; };
 		9D8EB0CD27AD7DEB007A83DB /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8EB0CC27AD7DEB007A83DB /* RestaurantDetailViewController.swift */; };
 		9D8EB0DC27AD8488007A83DB /* New Orleans.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D8EB0CF27AD8487007A83DB /* New Orleans.json */; };
 		9D8EB0DD27AD8488007A83DB /* New York.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D8EB0D027AD8487007A83DB /* New York.json */; };
@@ -82,6 +83,7 @@
 		9D4D826227A59582000603AE /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		9D4D826427A5994A000603AE /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		9D7BCE97279D1061001433BA /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		9D8B6CE227DF9AF400A5980A /* LetsEatModel .xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LetsEatModel .xcdatamodel"; sourceTree = "<group>"; };
 		9D8EB0CC27AD7DEB007A83DB /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		9D8EB0CF27AD8487007A83DB /* New Orleans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "New Orleans.json"; sourceTree = "<group>"; };
 		9D8EB0D027AD8487007A83DB /* New York.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "New York.json"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		9D38346227929D910014D57E /* Port_1 */ = {
 			isa = PBXGroup;
 			children = (
+				9D8B6CE027DF9ADE00A5980A /* CoreData */,
 				9D20084B27DA7DB90012FAC9 /* Photo Filter */,
 				9DB141B327D78A6E00C36034 /* No Data */,
 				9DB141B027D7891700C36034 /* Cells */,
@@ -175,6 +178,14 @@
 				9D4D826227A59582000603AE /* Locations.plist */,
 			);
 			path = Port_1;
+			sourceTree = "<group>";
+		};
+		9D8B6CE027DF9ADE00A5980A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9D8B6CE127DF9AF400A5980A /* LetsEatModel .xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		9D8EB0CE27AD8478007A83DB /* JSON Data Files  */ = {
@@ -391,6 +402,7 @@
 				9D20085927DCE6EC0012FAC9 /* FilterCell.swift in Sources */,
 				9D20085727DB655A0012FAC9 /* ImageFiltering.swift in Sources */,
 				9D38346427929D910014D57E /* AppDelegate.swift in Sources */,
+				9D8B6CE327DF9AF400A5980A /* LetsEatModel .xcdatamodeld in Sources */,
 				9D7BCE98279D1061001433BA /* RestaurantListViewController.swift in Sources */,
 				9DB141B527D78A7B00C36034 /* NoDataView.swift in Sources */,
 				9D8EB0EA27B3945A007A83DB /* RestaurantDataManager.swift in Sources */,
@@ -485,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -540,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -634,6 +646,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D8B6CE127DF9AF400A5980A /* LetsEatModel .xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D8B6CE227DF9AF400A5980A /* LetsEatModel .xcdatamodel */,
+			);
+			currentVersion = 9D8B6CE227DF9AF400A5980A /* LetsEatModel .xcdatamodel */;
+			path = "LetsEatModel .xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D38345827929D910014D57E /* Project object */;
 }
