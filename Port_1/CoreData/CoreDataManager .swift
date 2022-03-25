@@ -74,7 +74,7 @@ struct CoreDataManager {
        }
     }
     
-    private func fetchReviews(by identifier: Int) -> [ReviewItem] {
+     func fetchReviews(by identifier: Int) -> [ReviewItem] {
         
         let moc = container.viewContext
         let request = Review.fetchRequest()
@@ -96,7 +96,7 @@ struct CoreDataManager {
         }
     }
     
-    private func fetchRestPhoto(by identifier: Int) -> [RestaurantPhotoItem] {
+     func fetchRestPhoto(by identifier: Int) -> [RestaurantPhotoItem] {
         
         let moc = container.viewContext
         let request = RestaurantPhoto.fetchRequest()
@@ -116,5 +116,11 @@ struct CoreDataManager {
         } catch {
             fatalError("Failed to fetch restaurant photos: \(error)")
         }
+    }
+    
+    func fetchRestaurantRating(by identifier: Int) -> Double {
+        let reviewItems = fetchReviews(by: identifier)
+        let sum = reviewItems.reduce(0, { $0 + ($1.rating ?? 0)})
+        return sum / Double(reviewItems.count)
     }
 }

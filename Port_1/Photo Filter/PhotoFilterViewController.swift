@@ -73,7 +73,7 @@ private extension PhotoFilterViewController {
                 restPhotoItem.restaurantID = Int64(selRestID)
             }
             
-            CoreDataManager.shared.addPhoto(restPhotoItem)
+          //  CoreDataManager.shared.addPhoto(restPhotoItem.restaurantID)
             
         }
         
