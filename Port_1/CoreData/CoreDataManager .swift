@@ -7,9 +7,12 @@
 
 import Foundation
 import CoreData
- 
+
+//MARK: typealias
 typealias RestaurantPhoto = Photo
 
+
+//MARK: Struct
 struct CoreDataManager {
     
     
@@ -114,9 +117,4 @@ struct CoreDataManager {
             fatalError("Failed to fetch restaurant photos: \(error)")
         }
     }
-}
-
-
-extension CoreDataManager {
-    static var shared = CoreDataManager()
 }

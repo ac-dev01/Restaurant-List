@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gUI-DA-nYm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gUI-DA-nYm">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -245,7 +245,7 @@
                                                                     <rect key="frame" x="-0.5" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <connections>
-                                                                        <segue destination="GBa-F2-6Oj" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="9tb-aG-qwY"/>
+                                                                        <segue destination="GBa-F2-6Oj" kind="presentation" identifier="showPhotoFilter" modalPresentationStyle="fullScreen" id="9tb-aG-qwY"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -290,7 +290,7 @@
                                                                     <rect key="frame" x="-0.5" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <connections>
-                                                                        <segue destination="XG8-Ri-pIR" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="lDE-DR-HB9"/>
+                                                                        <segue destination="XG8-Ri-pIR" kind="presentation" identifier="showReview" modalPresentationStyle="fullScreen" id="lDE-DR-HB9"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -345,7 +345,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-2v-lBq">
-                                                    <rect key="frame" x="15" y="9" width="360" height="28"/>
+                                                    <rect key="frame" x="15" y="9" width="345" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="28" id="9rS-Fh-Y84"/>
                                                     </constraints>

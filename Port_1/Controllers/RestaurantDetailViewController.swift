@@ -13,7 +13,6 @@ class RestaurantDetailViewController: UITableViewController {
     //MARK: Properties
     
     var selectedRestaurant: RestaurantItem?
-    
     //MARK: IBOutlets, IBActions
     
         //NAV BAR
@@ -46,6 +45,23 @@ class RestaurantDetailViewController: UITableViewController {
         initialize()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let identifier = segue.identifier {
+            
+            switch identifier {
+                
+            case Segue.showReview.rawValue:
+                showReview(segue: segue)
+         
+            case Segue.showPhotoFilter.rawValue:
+                showPhotoFilter(segue: segue)
+                
+            default:
+                print("Segue not added")
+            }
+        }
+    }
     
     //MARK: HelperMethods
 
@@ -58,6 +74,26 @@ private extension RestaurantDetailViewController {
         setupLabels()
         createMap()
         createRating()
+    }
+    
+    func showPhotoFilter(segue: UIStoryboardSegue) {
+        
+        guard let navController = segue.destination as? UINavigationController,
+              let viewController = navController.topViewController as? PhotoFilterViewController else {
+            return
+        }
+        
+        viewController.selectdRestaurandID = selectedRestaurant?.restaurantID
+        
+    }
+    
+    func showReview(segue: UIStoryboardSegue) {
+        guard let navController = segue.destination as? UINavigationController,
+              let viewController = navController.topViewController as? ReviewFormViewController else {
+            return
+        }
+        
+        viewController.selectedRestaurantID = selectedRestaurant?.restaurantID
     }
     
     func createRating() {

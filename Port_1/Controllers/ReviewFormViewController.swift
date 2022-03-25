@@ -11,6 +11,7 @@ class ReviewFormViewController: UITableViewController {
 
     //MARK: Properties
     
+    var selectedRestaurantID: Int?
     
     //MARK: IBOutlets , IBActions
     
@@ -19,14 +20,19 @@ class ReviewFormViewController: UITableViewController {
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var reviewTextView: UITextView!
     
-    
     @IBAction func onSaveTapped(_ sender: Any) {
         
-        print(ratingsView.rating)
-        print(titleTextField.text as Any)
-        print(nameTextField.text as Any)
-        print(reviewTextView.text as Any)
+        var reviewItem = ReviewItem()
+        reviewItem.rating = ratingsView.rating
+        reviewItem.title = titleTextField.text
+        reviewItem.name = nameTextField.text
+        reviewItem.customerReview = reviewTextView.text
         
+        if let selRestID = selectedRestaurantID {
+            reviewItem.restaurantID = Int64(selRestID)
+        }
+        
+        CoreDataManager.shared.addReview(reviewItem)
         dismiss(animated: true, completion: nil)
         
     }
@@ -36,6 +42,7 @@ class ReviewFormViewController: UITableViewController {
     //MARK: View Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(selectedRestaurantID as Any)
     }
     
     

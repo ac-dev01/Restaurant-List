@@ -39,6 +39,10 @@ class PhotoFilterViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func onSaveTapped(_ sender: Any) {
+        saveSelectedPhoto()
+    }
+    
     //MARK: View Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +59,26 @@ private extension PhotoFilterViewController {
     func initilize() {
         setupCollectionView()
         checkSource()
+    }
+    
+    func saveSelectedPhoto() {
+        
+        if let mainImage = self.mainImageView.image {
+            
+            var restPhotoItem = RestaurantPhotoItem()
+            restPhotoItem.date = Date()
+            restPhotoItem.photo = mainImage.preparingThumbnail(of: CGSize(width: 100, height: 100))
+            
+            if let selRestID = selectdRestaurandID {
+                restPhotoItem.restaurantID = Int64(selRestID)
+            }
+            
+            CoreDataManager.shared.addPhoto(restPhotoItem)
+            
+        }
+        
+        dismiss(animated: true, completion: nil)
+        
     }
     
     func setupCollectionView() {
