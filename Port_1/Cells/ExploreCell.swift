@@ -19,12 +19,14 @@ class ExploreCell: UICollectionViewCell {
     @IBOutlet var exploreImageView: UIImageView!
     
     
-    //MARK: Methods
+//    override class func awakeFromNib() {
+//        super.awakeFromNib()
+//
+//
+//    }
     
-    
-    
-    //MARK: Helper Methods
-
-    
-    
+    override func layoutSubviews() {
+        exploreImageView.layer.cornerRadius = 10
+        exploreImageView.layer.masksToBounds = true
+    }
 }
